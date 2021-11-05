@@ -1,0 +1,14 @@
+.topnav{
+ display: flex;
+ justify-content: space-between;
+}
+.logo-nav{
+    color: orangered;
+    position: relative;
+    left: 40px;
+}
+.link{
+    position: relative;
+    top: 35px;
+    right: 40px;
+}
