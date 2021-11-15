@@ -1,7 +1,5 @@
 import './App.css';
 import './components/css/footer.css'
-import './components/css/nav.css'
-
 import Footer from './components/Footer';
 import Nav from "./components/Nav.js"
 import Home from './components/pages/Home';
@@ -29,9 +27,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route component={PageNotFound}>
-            
-          </Route>
+          <Route component={PageNotFound} />
         </Switch>
     </Router>
 

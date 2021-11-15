@@ -3,7 +3,7 @@
  justify-content: space-between;
 }
 .logo-nav{
-    color: orangered;
+    color: #ff6060;
     position: relative;
     left: 40px;
 }
@@ -11,4 +11,32 @@
     position: relative;
     top: 35px;
     right: 40px;
+    color: #ff6060;
+    padding-left: 15px;
+}
+@media only screen and (min-width: 1023px) { 
+    .topnav{
+        width: 1240px;
+        margin: auto;
+       }
+       .logo-nav{
+        color: #ff6060;
+        position: relative;
+        left: 0;
+        font-size: 4em;
+    }
+    .accueil{
+        margin-right: 30px;
+    }
+    .link{
+        position: relative;
+        top: 60px;
+        right: 0;
+        font-size: 2em;  
+        color: #ff6060;  
+    }
+    .logo{
+        width: 20%;
+    }
+   
 }

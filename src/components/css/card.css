@@ -1,11 +1,41 @@
+.card-container{
+    padding-bottom: 100px;
+}
 .card{
     width: 90%;
     margin: auto;
     padding: 10px;
 }
-img{
+.logement{
     width: 100%;
 }
 .title-card{
     font-size: 0.9em;
+}
+
+@media only screen and (min-width: 1023px) { 
+    .card-container{
+        width: 1240px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #f6f6f6;
+        margin: auto;
+        border-radius: 10px;
+        padding: 30px;
+        padding-bottom: 100px;
+        height: 570px;
+        overflow: scroll;
+        
+    }
+    .card{
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    }
+    .logement{
+        width: 320px;
+        height: 300px;
+        object-fit: cover;
+    }
 }

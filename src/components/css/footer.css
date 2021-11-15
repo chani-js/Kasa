@@ -1,19 +1,12 @@
 .footer{
     background-color: black;
-    height: 100px;
     position: fixed;
     bottom: 0px;
     width: 100%;
     text-align: center;
-}
-.footer-container{
-    position: relative;
+    padding: 20px 0 10px 0;
+    color: white;
 }
 .logo{
-    color: white;
     font-size: 1.4em;
-    padding: 20px;
-}
-.right{
-    color: white;
 }

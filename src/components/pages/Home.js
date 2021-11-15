@@ -1,6 +1,6 @@
 import Cards from "../Cards"
 
 const Home=()=>{
-    return <div>Home <Cards /></div>
+    return <div> <Cards /></div>
 } 
 export default Home
