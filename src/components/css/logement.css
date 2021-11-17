@@ -1,0 +1,16 @@
+.container-logement{
+    width: 1240px;
+    margin: auto;
+}
+.logement{
+   width: 100%;
+    object-fit: cover;
+    height: 451PX;
+    border-radius: 10px;
+    margin: auto;
+}
+.titre,.location{
+    margin: 0;
+    background-color: white;
+    color: #ff6060;
+}
