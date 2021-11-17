@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom'
+import React from 'react'
 import '../css/card.css'
-const Card=({data})=>{
-    
-    return <div className="card">
-                <Link to={`/Logement/${data.id}`}><img className="logement" src={data.cover} alt={data.title} ></img>
-                <div className="title-card">{data.title}</div></Link>
-            </div>
- }
+
+class Card extends React.Component {
+    render() {
+        return <div className="card">
+        <Link to={`/Logement/${this.props.data.id}`} className="link-card">
+            <img className="logement" src={this.props.data.cover} alt={this.props.data.title} ></img>
+            <div className="title-card">{this.props.data.title}</div>
+            <div className="layer-card"></div>
+        </Link>
+        
+    </div>
+    }
+  }
+
  export default Card

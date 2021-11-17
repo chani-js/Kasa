@@ -8,9 +8,29 @@
 }
 .logement{
     width: 100%;
+    display: inline-block;
 }
 .title-card{
     font-size: 0.9em;
+}
+.link-card{
+    position: relative;
+    display: flex;
+
+}
+.title-card{
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+}
+.layer-card{
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left:0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 @media only screen and (min-width: 1023px) { 
@@ -34,8 +54,8 @@
         border-radius: 10px;
     }
     .logement{
-        width: 320px;
         height: 300px;
         object-fit: cover;
+        
     }
 }
