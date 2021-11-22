@@ -9,6 +9,7 @@
 .logement{
     width: 100%;
     display: inline-block;
+    border-radius: 10px;
 }
 .title-card{
     font-size: 0.9em;
@@ -22,9 +23,15 @@
     position: absolute;
     bottom: 10px;
     z-index: 10;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    width: 70%;
+    padding: 10px;
 }
 .layer-card{
     position: absolute;
+    border-radius: 10px;
     z-index: 9;
     bottom: 0;
     top: 0;

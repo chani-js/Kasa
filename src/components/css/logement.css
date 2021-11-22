@@ -1,4 +1,4 @@
-Logement .container-logement{
+ .container-logement{
     width: 1240px;
     margin: auto;
 }
@@ -13,4 +13,24 @@ Logement .titre,.location{
     margin: 0;
     background-color: white;
     color: #ff6060;
+}
+.description-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.description, .equipement{
+    color: white;
+    width: 40%;
+}
+.entete{
+    background-color: #ff6060;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contenu{
+    color: #ff6060;
+    background-color: #f6f6f6;
+    padding: 20px 0 20px 10px;
+    border-radius: 10px;
 }

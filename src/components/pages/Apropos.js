@@ -1,5 +1,9 @@
 import '../css/propos.css'
-const Apropos=()=>{
+import React from 'react'
+
+class  Apropos extends React.Component {
+
+render(){
     return  <div className="container-principal">
                 <div>Apropos palcer l'image ici </div>
                 <div className="container">
@@ -29,4 +33,5 @@ const Apropos=()=>{
             </div>
    
 } 
+}
 export default Apropos
