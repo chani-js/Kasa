@@ -6,7 +6,9 @@
     text-align: center;
     padding: 20px 0 10px 0;
     color: white;
+    z-index: 11;
 }
-.logo{
-    font-size: 1.4em;
+.logo-footer{
+    font-size: 1.2em;
+    padding: 10px;
 }

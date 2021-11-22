@@ -38,5 +38,10 @@
     .logo{
         width: 20%;
     }
+    .nav-image{
+        padding: 40px;
+        position: relative;
+        left: 301px;
+    }
    
 }

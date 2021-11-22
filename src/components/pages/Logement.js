@@ -1,58 +1,55 @@
-import { useParams } from "react-router-dom"
+
 import mock from "../../mock.json"
 import "../css/logement.css"
+import React from 'react'
 
-const GetArticle=(id, Arts)=> Arts.filter((Art)=>id===Art.id )[0]
+import { withRouter } from "react-router-dom";
 
-/*const GetTags =()=> mock.forEach(element=>{
-    let tag= element.tags
-    return tag
-})*/
 
- /* const GetTags =(tags)=> {
-    let tag 
-    tags.forEach(element=>{
-        tag+= element.tags
-    })
-    return tag
-}*/
-    
 
-const Logement=()=>{
-    let params = useParams()
-    const article = GetArticle(params.id, mock)
-    //const tag = GetTags()
-   // console.log("tag==>",tag)
-    return  <div className="container-logement">
-                <div>
-                    <img className="logement" src={article.cover} alt={article.title}></img>
-                </div>
-                <div className="title">
-                    <p className="titre">{article.title}</p>
-                    <p className="location">{article.location}</p>
-                </div>
-                <div className="tags">
+class Logement extends React.Component {
 
-                </div>
-                <div className="description-container">
-                    <div className="description">
-                        <div className="entete">
-                            Déscription
-                        </div>
-                        <div className="contenu">
-                            {article.description}
-                        </div>
-
+    GetArticle=(id, Arts)=> Arts.filter((Art)=>id===Art.id )[0]
+    render() {
+        const article = this.GetArticle(this.props.match.params.id, mock)
+        return  <div className="container-logement">
+                    <div>
+                        <img className="logement" src={article.cover} alt={article.title}></img>
                     </div>
-                    <div className="equipement">
-                    <div className="entete">
+                    <div className="title">
+                        <p className="titre">{article.title}</p>
+                        <p className="location">{article.location}</p>
+                    </div>
+                    <div className="tags">
+                        {article.tags.map((tag)=> <span>{tag}</span>)}
+                    </div>
+                    <div className="description-container">
+                        <div className="description">
+                            <div className="entete">
+                                Déscription
+                            </div>
+                            <div className="contenu">
+                                {article.description}
+                            </div>
+    
+                        </div>
+                        <div className="equipement">
+                        <div className="entete">
                             Equipement
                         </div>
+                        <div className="equipement-list">
+                        {article.equipments.map((equipement)=> <span>{equipement}</span>)}
+                        </div>
+                        </div>
+    
                     </div>
-
+    
                 </div>
+    } 
 
-            </div>
-} 
-export default Logement
+}
+    
+
+
+export default withRouter(Logement)
 
