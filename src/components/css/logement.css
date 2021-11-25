@@ -9,10 +9,13 @@ Logement .logement{
     border-radius: 10px;
     margin: auto;
 }
-Logement .titre,.location{
+.titre-logement,.location{
     margin: 0;
     background-color: white;
-    color: #ff6060;
+    color: #ff6060 ;
+}
+.titre-logement{
+    font-size: 2em;
 }
 .description-container{
     display: flex;
@@ -36,4 +39,46 @@ Logement .titre,.location{
 }
 .equipement-list{
     color: #ff6060;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 0 20px 10px;
+}
+.tags{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 20px 0;
+}
+.tags span{
+    background-color: #ff6060;
+    border-radius: 10px;
+    color: white;
+    padding: 3px 20px 3px 20px;
+    margin-right: 10px;
+}
+.container-infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infos-rate{
+    width: 20%;
+    padding: 20px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name-place{
+    position: relative;
+    top: 50px;
+    color: #ff6060;
+    font-size: 1.3em;
+}
+.infos-rate img{
+    object-fit: cover;
+    width: 120px;
+    border-radius: 100px;
 }
