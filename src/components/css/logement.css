@@ -82,3 +82,23 @@ Logement .logement{
     width: 120px;
     border-radius: 100px;
 }
+.fas{
+    transition: 0.5s;
+}
+
+.fas-active {
+    transform: rotate(180deg);
+    
+}
+.contenu, .equipement-list {
+    display: none;
+    background-color: #f6f6f6;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 0;
+    border-radius: 0px 0px 5px 5px;
+}
+.active{
+    display: block;
+
+}
