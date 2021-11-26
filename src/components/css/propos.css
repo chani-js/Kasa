@@ -1,27 +1,56 @@
-.container-principal{
+.container-principal {
     width: 1240px;
     margin: auto;
 }
-.container-margin{
+
+.container-margin {
     margin-top: 50px;
 }
-.container-bloc{
+
+.container-bloc {
     width: 80%;
     margin: auto;
+    margin-bottom: 15px;
 }
 
- .titre{
+.titre {
     background-color: #ff6060;
     border-radius: 5px 5px 0px 0px;
     margin: auto;
     padding: 5px;
     color: white;
     text-align: start;
+    display: flex;
+    justify-content: space-between;
 }
-p{
+
+.titre i {
+    padding: 5px;
+}
+.fas{
+    transition: 0.5s;
+}
+
+.fas-active {
+    transform: rotate(180deg);
+    
+}
+
+
+p {
+    display: none;
     background-color: #f6f6f6;
     padding: 10px;
     font-size: 1em;
-    margin-top:0 ;
+    margin-top: 0;
     border-radius: 0px 0px 5px 5px;
+}
+.active{
+    display: block;
+
+}
+
+
+.img-propos img {
+    border-radius: 10px;
 }

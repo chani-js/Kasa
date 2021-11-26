@@ -3,8 +3,16 @@ import mock from "../../mock.json"
 import "../css/logement.css"
 import React from 'react'
 import { withRouter } from "react-router-dom";
+import Rating from './rating';
 
 class Logement extends React.Component {
+    handleclick(e,classname){
+        const element = document.getElementsByClassName(classname)[0]
+            element.classList.toggle("active")
+            e.target.classList.toggle("fas-active")
+            
+
+    }
     GetArticle=(id, Arts)=> Arts.filter((Art)=>id===Art.id )[0]
     render() {
         const article = this.GetArticle(this.props.match.params.id, mock)
@@ -28,14 +36,14 @@ class Logement extends React.Component {
                                 <img classname="pics-infos" src={article.host.picture} alt={article.host.name}></img>
                             </div>
                             <div className="rate">
-                                {article.rating}
+                            <Rating rating={article.rating} />
                             </div>
                         </div>
                         </div>
                     <div className="description-container">
                         <div className="description">
-                            <div className="entete">
-                                Déscription
+                            <div className="entete" >
+                                Déscription <i class="fas fa-chevron-up" onClick={(e)=>this.handleclick(e,"contenu")}></i>
                             </div>
                             <div className="contenu">
                                 {article.description}
@@ -43,7 +51,7 @@ class Logement extends React.Component {
                         </div>
                         <div className="equipement">
                             <div className="entete">
-                                Equipement
+                                Equipement <i class="fas fa-chevron-up" onClick={(e)=>this.handleclick(e,"equipement-list")}></i>
                             </div>
                             <div className="equipement-list">
                                 {article.equipments.map((equipement)=> <span>{equipement}</span>)}
