@@ -30,6 +30,8 @@ Logement .logement{
     background-color: #ff6060;
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 .contenu{
     color: #ff6060;
@@ -84,6 +86,7 @@ Logement .logement{
 }
 .fas{
     transition: 0.5s;
+    padding: 5px;
 }
 
 .fas-active {
@@ -98,7 +101,7 @@ Logement .logement{
     margin-top: 0;
     border-radius: 0px 0px 5px 5px;
 }
-.active{
-    display: block;
+.active-equip{
+    display: flex;
 
 }

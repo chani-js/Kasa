@@ -8,7 +8,7 @@ import Rating from './rating';
 class Logement extends React.Component {
     handleclick(e,classname){
         const element = document.getElementsByClassName(classname)[0]
-            element.classList.toggle("active")
+            element.classList.toggle("active-equip")
             e.target.classList.toggle("fas-active")
             
 
